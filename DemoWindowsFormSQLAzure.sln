@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32328.378
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoWindowsFormSQLAzure", "DemoWindowsFormSQLAzure\DemoWindowsFormSQLAzure.csproj", "{EFFE4BF2-2685-4BB3-A296-353B64F60CDC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EFFE4BF2-2685-4BB3-A296-353B64F60CDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFFE4BF2-2685-4BB3-A296-353B64F60CDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFFE4BF2-2685-4BB3-A296-353B64F60CDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFFE4BF2-2685-4BB3-A296-353B64F60CDC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {998EE1C0-763D-44D0-AB62-FF270CD71486}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dev.azure.com/condepessoal
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = DemoWindowsFormSQLAzure\\DemoWindowsFormSQLAzure.csproj
+		SccProjectName1 = DemoWindowsFormSQLAzure
+		SccLocalPath1 = DemoWindowsFormSQLAzure
+	EndGlobalSection
+EndGlobal
