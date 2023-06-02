@@ -71,7 +71,6 @@
             this.txtConnectionString.Name = "txtConnectionString";
             this.txtConnectionString.Size = new System.Drawing.Size(1435, 118);
             this.txtConnectionString.TabIndex = 3;
-            this.txtConnectionString.Text = "<Insira a String de Conexão do Azure SQL Database>";
             // 
             // frmPrincipal
             // 
