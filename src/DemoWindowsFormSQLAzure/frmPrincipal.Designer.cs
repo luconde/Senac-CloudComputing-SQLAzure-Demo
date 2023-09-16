@@ -28,65 +28,91 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGrid = new System.Windows.Forms.DataGridView();
-            this.cmdLoad = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtConnectionString = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGrid)).BeginInit();
-            this.SuspendLayout();
+            dataGrid = new DataGridView();
+            cmdLoad = new Button();
+            label1 = new Label();
+            txtConnectionString = new TextBox();
+            label2 = new Label();
+            txtNomeDaTabela = new TextBox();
+            ((System.ComponentModel.ISupportInitialize)dataGrid).BeginInit();
+            SuspendLayout();
             // 
             // dataGrid
             // 
-            this.dataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGrid.Location = new System.Drawing.Point(104, 183);
-            this.dataGrid.Name = "dataGrid";
-            this.dataGrid.RowHeadersWidth = 102;
-            this.dataGrid.RowTemplate.Height = 49;
-            this.dataGrid.Size = new System.Drawing.Size(1910, 625);
-            this.dataGrid.TabIndex = 0;
+            dataGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGrid.Location = new Point(43, 175);
+            dataGrid.Margin = new Padding(1);
+            dataGrid.Name = "dataGrid";
+            dataGrid.RowHeadersWidth = 102;
+            dataGrid.RowTemplate.Height = 49;
+            dataGrid.Size = new Size(786, 229);
+            dataGrid.TabIndex = 0;
             // 
             // cmdLoad
             // 
-            this.cmdLoad.Location = new System.Drawing.Point(1586, 846);
-            this.cmdLoad.Name = "cmdLoad";
-            this.cmdLoad.Size = new System.Drawing.Size(428, 71);
-            this.cmdLoad.TabIndex = 1;
-            this.cmdLoad.Text = "Carregar";
-            this.cmdLoad.UseVisualStyleBackColor = true;
-            this.cmdLoad.Click += new System.EventHandler(this.cmdLoad_Click);
+            cmdLoad.Location = new Point(653, 425);
+            cmdLoad.Margin = new Padding(1);
+            cmdLoad.Name = "cmdLoad";
+            cmdLoad.Size = new Size(176, 26);
+            cmdLoad.TabIndex = 1;
+            cmdLoad.Text = "Carregar";
+            cmdLoad.UseVisualStyleBackColor = true;
+            cmdLoad.Click += cmdLoad_Click;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(106, 28);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(457, 41);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "String de Conexão no Azure SQL:";
+            label1.AutoSize = true;
+            label1.Location = new Point(44, 10);
+            label1.Margin = new Padding(1, 0, 1, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(181, 15);
+            label1.TabIndex = 2;
+            label1.Text = "String de Conexão no Azure SQL:";
             // 
             // txtConnectionString
             // 
-            this.txtConnectionString.Location = new System.Drawing.Point(579, 30);
-            this.txtConnectionString.Multiline = true;
-            this.txtConnectionString.Name = "txtConnectionString";
-            this.txtConnectionString.Size = new System.Drawing.Size(1435, 118);
-            this.txtConnectionString.TabIndex = 3;
+            txtConnectionString.Location = new Point(238, 11);
+            txtConnectionString.Margin = new Padding(1);
+            txtConnectionString.Multiline = true;
+            txtConnectionString.Name = "txtConnectionString";
+            txtConnectionString.Size = new Size(593, 87);
+            txtConnectionString.TabIndex = 3;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(130, 105);
+            label2.Margin = new Padding(1, 0, 1, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(95, 15);
+            label2.TabIndex = 4;
+            label2.Text = "Nome da Tabela:";
+            // 
+            // txtNomeDaTabela
+            // 
+            txtNomeDaTabela.Location = new Point(238, 102);
+            txtNomeDaTabela.Name = "txtNomeDaTabela";
+            txtNomeDaTabela.Size = new Size(250, 23);
+            txtNomeDaTabela.TabIndex = 5;
+            txtNomeDaTabela.Text = "Cliente";
             // 
             // frmPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 41F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2068, 959);
-            this.Controls.Add(this.txtConnectionString);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.cmdLoad);
-            this.Controls.Add(this.dataGrid);
-            this.Name = "frmPrincipal";
-            this.Text = "Conectando no SQL Azure";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGrid)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(863, 469);
+            Controls.Add(txtNomeDaTabela);
+            Controls.Add(label2);
+            Controls.Add(txtConnectionString);
+            Controls.Add(label1);
+            Controls.Add(cmdLoad);
+            Controls.Add(dataGrid);
+            Margin = new Padding(1);
+            Name = "frmPrincipal";
+            Text = "Conectando no SQL Azure";
+            ((System.ComponentModel.ISupportInitialize)dataGrid).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -95,5 +121,7 @@
         private Button cmdLoad;
         private Label label1;
         private TextBox txtConnectionString;
+        private Label label2;
+        private TextBox txtNomeDaTabela;
     }
 }
